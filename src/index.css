@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.card{
+  @apply bg-white rounded overflow-hidden shadow relative hover:shadow-lg;
+}
+
+.badge{
+  @apply bg-gray-300 text-gray-500 text-xs uppercase font-bold rounded-full p-2 absolute top-0 ml-2 mt-2;
+}
+
+.btn{
+  @apply tracking-wider rounded-full py-2 px-3 uppercase text-xs font-bold cursor-pointer;
+}
